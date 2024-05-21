@@ -82,8 +82,8 @@ app.get("/moppy", (req, res) => {
         );
     } catch (err) {
         console.log(err);
+        res.send('エラー');
     }
-    res.send('get');
 });
 
 const mercari = async () => {
@@ -109,8 +109,8 @@ app.get("/mercari", (req, res) => {
         );
     } catch (err) {
         console.log(err);
+        res.send('エラー');
     }
-    res.send('get');
 });
 
 const daiwa = async () => {
@@ -136,8 +136,8 @@ app.get("/daiwa", (req, res) => {
         );
     } catch (err) {
         console.log(err);
+        res.send('エラー');
     }
-    res.send('get');
 });
 
 const olive = async () => {
@@ -163,8 +163,8 @@ app.get("/olive", (req, res) => {
         );
     } catch (err) {
         console.log(err);
+        res.send('エラー');
     }
-    res.send('get');
 });
 
 app.get("/", (req, res) => {
